@@ -1,0 +1,32 @@
+@import "tailwind.css"
+.hero{
+    /* background-image: url(src/hero-women.png);
+    background-repeat: no-repeat;
+    background-size: 58%;
+    background-position: right; */
+    height: 110vh;
+}
+.hero-text{
+    position: absolute;
+    width: 55%;
+}
+.hero-img{
+    height: auto;
+    /* width: 64%; */
+    margin-left: 37%;
+    margin-top: 6vh;
+    margin-right: 5em;
+    width: 100%;
+}
+.card i{
+    font-size: 70px;
+}
+.utube{
+    background-image: url(src/utube.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+.why-choose-us .icon i{
+    font-size: 50px;
+
+}
