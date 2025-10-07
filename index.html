@@ -9,13 +9,14 @@
     <script src="https://kit.fontawesome.com/61e8db6feb.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-<body class="text-[#0e3c7b] ">
+<body class="text-[#0e3c7b] max-w-none w-full ">
     <!-- hero -->
-    <section class="h-[120vh] bg-blue-100">
-        <nav class="p-3 flex font-medium justify-around shadow">
-            <img class="h-14" src="src/logo.png" alt="logo">
-            <div class="flex px-4 gap-8 items-center ml-60">
+    <section class="md:bg-blue-100">
+        <nav class="p-3 grid grid-cols-[2fr_1fr_1fr] md:grid-cols-[1fr_3fr_1fr] font-medium  shadow">
+            <img class="w-43 md:w-auto md:ml-17 md:h-14" src="src/logo.png" alt="logo">
+            <div id="menu" class="hidden md:flex justify-center px-4 gap-8 items-center mx-10">
                 <a href="#">Home</a>
                 <a href="#">Pages</a>
                 <a href="#">Service</a>
@@ -23,46 +24,50 @@
                 <a href="#">Blogs</a>
                 <a href="#">Contact</a>
             </div>
-            <button class="bg-yellow-300 h-12 px-5 mt-2 rounded-full">Contact Us</button>
-        </nav>
-        <div class="hero flex">
-            <div class="hero-text p-20 pt-40">
-                <p class="px-4 py-2 bg-blue-500 text-white w-52 rounded-md">25% offer for new client</p>
-                <h1 class="font-bold text-6xl py-3">We Love The Job You Hate !</h1>
-                <p class="text-lg py-3 text-[#57667e]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, sunt. Lorem ipsum dolor sit.</p>
+            <button class="md:block bg-yellow-300 text-sm md:text-lg w-25 md:w-40 p-1 ml-10 md:ml-0 md:w-45 md:h-12 md:px-5 mt-2 rounded-full">Contact Us</button>
+            <button id="menu-btn" class="block px-2 md:hidden text-2xl bg-blue-500 text-white justify-self-end mr-4">
+                ☰
+            </button>
+        </nav>     
+    </section>
+    <!-- hero -->
+    <section>
+        <div class="hero h-[50vh] grid grid-cols-[7fr_2px] md:w-auto md:h-auto md:grid md:grid-cols-[2fr_1fr] bg-blue-100">
+            <div class="hero-text flex flex-col mt-20 md:mt:auto items-center text-center md:items-start md:p-20  md:text-left md:pt-40">
+                <p class="text-[12px] py-1 px-2 md:text-lg md:px-4 md:py-2 bg-blue-500 text-white rounded-md">25% offer for new client</p>
+                <h1 class="text-lg font-bold md:text-6xl py-3">We Love The Job You Hate !</h1>
+                <p class="text-[10px] md:text-lg md:text-lg py-3 text-[#57667e]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, sunt. Lorem ipsum dolor sit.</p>
                 <div>
-                    <button class="mt-10 mr-4 px-6 py-3 text-lg bg-yellow-300  font-medium rounded-full hover:bg-blue-500 hover:text-white">More About Us</button>
-                    <button class="px-6 py-3 text-lg bg-white  font-medium rounded-full hover:bg-blue-500 hover:text-white">Get A Service</button>
+                    <button class="text-sm px-2 py-1 md:mt-10 md:mr-4 md:px-6 md:py-3 md:text-lg bg-yellow-300 font-medium rounded-full hover:bg-blue-500 hover:text-white">More About Us</button>
+                    <button class="text-sm px-2 py-1 md:px-6 md:py-3 md:text-lg bg-white  font-medium rounded-full hover:bg-blue-500 hover:text-white">Get A Service</button>
                 </div>
             </div>
-            <div class="hero-img">
+            <div class="hero-img hidden md:block">
                 <img src="src/hero-women.png" alt="img">
             </div>
-
-
         </div>
     </section>
 
     <!-- what we do -->
-     <section class="what-we-do mt-18 h-[]">
+     <section class="what-we-do mt-18">
         <div class="text-center">
-            <p class="text-blue-500 font-medium">WHAT WE DO</p>
-            <h1 class="text-5xl font-semibold">The Service We Provide <br> for our Customer</h1>
+            <p class="text-sm md:text-lg text-blue-500 font-medium">WHAT WE DO</p>
+            <h1 class="text-3xl md:text-5xl font-bold">The Service We Provide <br> for our Customer</h1>
         </div>
-        <div class="flex  gap-x-5 card p-10">
-            <div class="w-100 border py-10 px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 card p-10">
+            <div class="md:w-90 border py-10 px-8">
                 <i class="fa-regular fa-house fa-2xl py-5 my-10"></i>
-                <h1 class="py-2 font-medium text-xl">Home Cleaning</h1>
+                <h1 class="py-2 font-medium md:text-xl">Home Cleaning</h1>
                 <p class="py-2 text-[#57667e]">Recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady</p>
                 <p class="text-blue-500 underline">Read More</p>
             </div>
-            <div class="w-100 border py-10 px-8">
+            <div class="hidden md:block md:w-90 border py-10 px-8">
                 <i class="fa-solid fa-box py-5"></i>
                 <h1 class="py-2 font-medium text-xl">Office Cleaning</h1>
                 <p class="py-2 text-[#57667e]">Recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady</p>
                 <p class="text-blue-500 underline">Read More</p>
             </div>
-            <div class="w-100 border py-10 px-8">
+            <div class="hidden md:block md:w-90 border py-10 px-8">
                 <i class="fa-brands fa-windows py-5"></i>
                 <h1 class="py-2 font-medium text-xl">Window Cleaning</h1>
                 <p class="py-2 text-[#57667e]">Recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady</p>
@@ -72,25 +77,25 @@
      </section>
 
      <!-- About our company -->
-    <section class="about-company flex">
-        <div class="w-[50%] px-20 py-10">
+    <section class="about-company grid md:grid-cols-[1fr_1fr]">
+        <div class="p-5 md:px-20 py-10">
             <div>
-                <span class="uppercase text-blue-500 font-medium">About our history</span>
-                <h2 class="font-medium text-5xl">We are cleaning company since 1987</h2>
+                <span class="uppercase text-sm md:text-lg text-blue-500 font-medium">About our history</span>
+                <h2 class="font-medium text-3xl md:text-5xl">We are cleaning company since 1987</h2>
             </div>
             <div>
-                <p class="py-7 text-[#57667e]">Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm </p>
+                <p class="py-7 text-[#57667e] text-sm md:text-lg">Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm </p>
                 <ul class="text-[#57667e]">
                     <li><i class="fa-solid fa-square-check"></i>Fitted out with a fur hat</li>
                     <li><i class="fa-solid fa-square-check"></i>Showed a lady fitted our with far.</li>
                     <li><i class="fa-solid fa-square-check"></i>Hourse cleansing</li>
                 </ul>
-                <h4 class="text-lg font-medium py-7">Illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and</h4>
+                <h4 class="md:text-lg font-medium py-7">Illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and</h4>
                 <p class="text-lg">- John,<span class="text-[#57667e]">Manager of Service.</span></p>
             </div>
         </div>
-        <div class="utube w-[50%] p-20 mt-10">
-            <div class="ml-30 mt-50">
+        <div class="utube p-5 md:p-20 mt-10">
+            <div class="ml-30 h-100 md:h-auto md:mt-50">
                 <div class="w-2 px-6 py-1 rounded-full animate-ping bg-blue-500">
                 </div>
                 <i class="px-5 py-3 bg-white rounded-full fa-solid fa-play"></i>
@@ -101,7 +106,7 @@
     <!-- why choose us -->
 
     <section class="why-choose-us bg-blue-100 mt-20">
-        <div class="flex gap-20 p-20 text-center  ">
+        <div class="grid md:grid-cols-4 gap-20 p-20 text-center  ">
             <div class="">
                 <div class="icon">
                     <i class="fa-solid fa-user-tie"></i>
@@ -137,9 +142,9 @@
      <section class="work-process text-center m-10 py-10">
         <div class="work-text m-10">
             <h2 class="uppercase text-blue-500 font-medium">Work process</h2>
-            <h1 class="text-5xl font-bold">How it Works</h1>
+            <h1 class="text-3xl md:text-5xl font-bold">How it Works</h1>
         </div>
-        <div class="work-card   flex px-20 gap-24 justify-center items-center">
+        <div class="work-card grid md:grid-cols-3 px-20 gap-24 justify-center items-center">
             <div>
                 <div class="text-center flex justify-center"><h1 class="px-6 py-7 w-29 bg-blue-100 rounded-full text-6xl font-bold">1</h1></div>
                 <h2 class="text-2xl font-medium py-4">Easy Online Booking</h2>
@@ -164,7 +169,7 @@
     <section class="recent-projects mt-20 py-10">
         <div class="recent-text text-center m-10">
             <h2 class="uppercase text-blue-500 font-medium">Recent Projects</h2>
-            <h1 class="text-5xl font-bold" >Check Recent Project<br>Done for client</h1>
+            <h1 class="text-3xl md:text-5xl font-bold" >Check Recent Project<br>Done for client</h1>
         </div>
         <div class="recent-img flex  " style="width: 25%; height: 25rem;">
             <img class="object-cover" src="src/housekeeper.jpg" alt="">
@@ -176,15 +181,15 @@
 
     <!-- Testimonial -->
 
-    <section class="testimonial m-20 gap-10 py-10 pt-10 flex">
-        <div class="testimonial-text w-[30%]">
+    <section class="testimonial m-5 md:m-20 gap-10 py-10 pt-10 grid md:grid-cols-[1fr_2fr]">
+        <div class="testimonial-text">
             <h2 class="text-blue-500 font-medium uppercase">Testimonial</h2>
-            <h1 class="text-4xl font-bold">What Client Says About us</h1>
+            <h1 class="text-3xl md:text-5xl font-bold">What Client Says About us</h1>
         </div>
 
-        <div class="testimonial-box w-[68%] ">
-            <div class="border-2 border-blue-100 p-12">
-            <p class="text-[#57667e] text-xl">
+        <div class="testimonial-box ">
+            <div class="border-2 border-blue-100 py-10 px-5 md:p-12">
+            <p class="text-[#57667e] md:text-xl">
               A collection of textile samples lay spread out on the table Samsa was a
               salesman and above it there hung a picture that he had recently cut out
               of an illustrated magazine and in a nice, gilded frame there hung a
@@ -206,9 +211,9 @@
     <section class="pricing-table">
         <div class="text-center">
             <h2 class="text-blue-500 uppercase font-medium">pricing table</h2>
-            <h1 class="text-5xl font-bold">Choose Your Plan</h1>
+            <h1 class="text-3xl md:text-5xl font-bold">Choose Your Plan</h1>
         </div>
-        <div class="container   flex gap-10 p-20 justify-center items-center">
+        <div class="container grid md:grid-cols-3 gap-10 p-20 justify-center items-center">
             <div class="card border-2 border-blue-200 py-10 px-8 w-[22rem] text-[#57667e] rounded-md">
                 <div class="money pb-5 border-b-2 border-blue-200 border-dotted">
                     <h2 class="text-xl">Basic Plan</h2>
@@ -271,10 +276,10 @@
     <section class="recent-news m-10 mt-20">
         <div class="text-center">
             <h2 class="text-blue-500 uppercase font-medium">Recent News</h2>
-            <h1 class="text-5xl font-bold">Our Company News</h1>
+            <h1 class="text-3xl md:text-5xl font-bold">Our Company News</h1>
         </div>
-        <div class="container   flex gap-8 rounded-md items-center justify-center p-10">
-            <div class="news-card w-[30%] my-5 py-10 px-8 border border-blue-200">
+        <div class="container grid md:grid-cols-3 gap-8 rounded-md items-center justify-center md:p-10">
+            <div class="news-card my-5 py-10 px-8 border border-blue-200">
                 <div class="flex">
                     <div class="w-20"><img class="w-20 h-20 rounded-full object-cover" src="src/housekeeper.jpg" alt=""></div>
                     <div class="ml-4 justify-center flex flex-col">
@@ -287,7 +292,7 @@
                     <p class="text-[#57667e]" >Raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to</p>
                 </div>
             </div>
-            <div class="news-card w-[30%] py-10 px-8 border border-blue-200">
+            <div class="news-card py-10 px-8 border border-blue-200">
                 <div class="flex">
                     <div class="w-20"><img class="w-20 h-20 rounded-full object-cover" src="src/housekeeper.jpg" alt=""></div>
                     <div class="ml-4 justify-center flex flex-col">
@@ -300,7 +305,7 @@
                     <p class="text-[#57667e]" >Raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to</p>
                 </div>
             </div>
-            <div class="news-card w-[30%] py-10 px-8 border border-blue-200">
+            <div class="news-card py-10 px-8 border border-blue-200">
                 <div class="flex">
                     <div class="w-20"><img class="w-20 h-20 rounded-full object-cover" src="src/housekeeper.jpg" alt=""></div>
                     <div class="ml-4 justify-center flex flex-col">
@@ -318,13 +323,13 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer bg-blue-600 text-white gap-15">
-        <div class="container   flex p-20 bg-blue-600 text-white gap-15">
+    <footer class="footer bg-blue-600 text-white md:gap-15">
+        <div class="container grid md:grid-cols-4 p-5 md:p-20 bg-blue-600 text-white md:gap-15">
             <div class="w-100">
                 <img class="w-40" src="src/logo.png" alt="Duster Logo" class="logo">
                 <p class="py-5">
-                Lower arm towards the viewer.
-                Gregor then turned to look out the 
+                Lower arm towards the viewer. <br>
+                Gregor then turned to look out the  <br>
                 window at the dull weather
                 </p>
             </div>
@@ -359,7 +364,7 @@
       <!-- Newsletter -->
       <div class="w-100">
         <h4 class="font-bold">Newsletter</h4>
-        <p class="mt-8">You will be notified when somthing new will be appear.</p>
+        <p class="mt-8">You will be notified when somthing new <br> will be appear.</p>
         <form>
           <input class="bg-white p-3 rounded-md my-5" type="email" placeholder="Email Address *">
         </form>
@@ -377,7 +382,7 @@
         <a href="#">FAQ</a>
       </div>
     </div>
-</footer>
+    </footer>
 
 
 
