@@ -12,11 +12,9 @@
 }
 .hero-img{
     height: auto;
-    /* width: 64%; */
-    margin-left: 47%;
     margin-top: 6vh;
-    margin-right: 5em;
-    width: 100%;
+    margin-right: 0%;
+    padding: auto;
 }
 .card i{
     font-size: 70px;
