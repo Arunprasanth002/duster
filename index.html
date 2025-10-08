@@ -32,18 +32,18 @@
     </section>
     <!-- hero -->
     <section>
-        <div class="hero h-[50vh] grid grid-cols-[7fr_2px] md:w-auto md:h-auto md:grid md:grid-cols-[2fr_1fr] bg-blue-100">
-            <div class="hero-text flex flex-col mt-20 md:mt:auto items-center text-center md:items-start md:p-20  md:text-left md:pt-40">
-                <p class="text-[12px] py-1 px-2 md:text-lg md:px-4 md:py-2 bg-blue-500 text-white rounded-md">25% offer for new client</p>
-                <h1 class="text-lg font-bold md:text-6xl py-3">We Love The Job You Hate !</h1>
-                <p class="text-[10px] md:text-lg md:text-lg py-3 text-[#57667e]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, sunt. Lorem ipsum dolor sit.</p>
+        <div class="hero h-[80vh] w-[100%] grid md:grid-cols-2 md:w-auto md:h-auto md:grid-cols-2 bg-blue-100">
+            <div class="p-5 md:py-20 md:px-10 flex flex-col items-center md:items-start justify-center md:justify-start">
+                <p class="text-sm py-1 px-2 md:px-4 ml-15  md:py-2 bg-blue-500 text-white rounded-md">25% offer for new client</p>
+                <h1 class="text-4xl text-center md:text-left font-bold md:text-6xl py-3">We Love The Job You Hate !</h1>
+                <p class="text-lg text-center md:text-left md:text-lg md:text-lg py-5 text-[#57667e]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, sunt. Lorem ipsum dolor sit.</p>
                 <div>
-                    <button class="text-sm px-2 py-1 md:mt-10 md:mr-4 md:px-6 md:py-3 md:text-lg bg-yellow-300 font-medium rounded-full hover:bg-blue-500 hover:text-white">More About Us</button>
-                    <button class="text-sm px-2 py-1 md:px-6 md:py-3 md:text-lg bg-white  font-medium rounded-full hover:bg-blue-500 hover:text-white">Get A Service</button>
+                    <button class="text-lg px-4 py-2 md:mt-10 md:mr-4 md:px-6 md:py-3 md:text-lg bg-yellow-300 font-medium rounded-full hover:bg-blue-500 hover:text-white">More About Us</button>
+                    <button class="text-lg px-4 py-2 md:px-6 md:py-3 md:text-lg bg-white  font-medium rounded-full hover:bg-blue-500 hover:text-white">Get A Service</button>
                 </div>
             </div>
             <div class="hero-img hidden md:block">
-                <img src="src/hero-women.png" alt="img">
+                <img class="ml-[-50%]" src="src/hero-women.png" alt="img">
             </div>
         </div>
     </section>
@@ -54,7 +54,7 @@
             <p class="text-sm md:text-lg text-blue-500 font-medium">WHAT WE DO</p>
             <h1 class="text-3xl md:text-5xl font-bold">The Service We Provide <br> for our Customer</h1>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 card p-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 card p-5 md:p-10">
             <div class="md:w-90 border py-10 px-8">
                 <i class="fa-regular fa-house fa-2xl py-5 my-10"></i>
                 <h1 class="py-2 font-medium md:text-xl">Home Cleaning</h1>
@@ -94,11 +94,11 @@
                 <p class="text-lg">- John,<span class="text-[#57667e]">Manager of Service.</span></p>
             </div>
         </div>
-        <div class="utube p-5 md:p-20 mt-10">
+        <div class="utube ml-10 md:ml-auto md:p-20 mt-10">
             <div class="ml-30 h-100 md:h-auto md:mt-50">
                 <div class="w-2 px-6 py-1 rounded-full animate-ping bg-blue-500">
                 </div>
-                <i class="px-5 py-3 bg-white rounded-full fa-solid fa-play"></i>
+                <i class="hidden md:block px-5 py-3 bg-white rounded-full fa-solid fa-play"></i>
             </div>
         </div>
     </section>
@@ -106,7 +106,7 @@
     <!-- why choose us -->
 
     <section class="why-choose-us bg-blue-100 mt-20">
-        <div class="grid md:grid-cols-4 gap-20 p-20 text-center  ">
+        <div class="grid md:grid-cols-4 gap-10 md:gap-20 p-10 md:p-20 text-center  ">
             <div class="">
                 <div class="icon">
                     <i class="fa-solid fa-user-tie"></i>
@@ -144,9 +144,11 @@
             <h2 class="uppercase text-blue-500 font-medium">Work process</h2>
             <h1 class="text-3xl md:text-5xl font-bold">How it Works</h1>
         </div>
-        <div class="work-card grid md:grid-cols-3 px-20 gap-24 justify-center items-center">
+        <div class="work-card grid md:grid-cols-3 md:px-20 gap-24 justify-center items-center">
             <div>
-                <div class="text-center flex justify-center"><h1 class="px-6 py-7 w-29 bg-blue-100 rounded-full text-6xl font-bold">1</h1></div>
+                <div class="text-center flex justify-center">
+                    <h1 class="px-6 py-7 w-29 bg-blue-100 rounded-full text-6xl font-bold">1</h1>
+                </div>
                 <h2 class="text-2xl font-medium py-4">Easy Online Booking</h2>
                 <p>Recently cut out of an illustrated magazine and housed in a nice, gilded frame</p>
             </div>
@@ -266,20 +268,20 @@
     </section>
 
     <!-- Offer -->
-     <section class="offer text-center my-10 h-[55vh] bg-blue-200 justify-center items-center flex flex-col">
-        <h1 class="uppercase text-5xl font-bold">15% off for our <br> new client</h1>
-        <button class="mt-5 py-5 px-10 bg-yellow-300 font-medium rounded-full">Get A Service Now</button>
+     <section class="offer text-center my-10 h-[35vh] md:h-[55vh] bg-blue-200 justify-center items-center flex flex-col">
+        <h1 class="uppercase text-3xl md:text-5xl font-bold">15% off for our <br> new client</h1>
+        <button class="mt-5 py-2 px-3 md:py-5 md:px-10 bg-yellow-300 font-medium rounded-full">Get A Service Now</button>
      </section>
 
      <!-- Recent News -->
     
-    <section class="recent-news m-10 mt-20">
+    <section class="recent-news m-5 md:m-10 mt-20">
         <div class="text-center">
             <h2 class="text-blue-500 uppercase font-medium">Recent News</h2>
             <h1 class="text-3xl md:text-5xl font-bold">Our Company News</h1>
         </div>
-        <div class="container grid md:grid-cols-3 gap-8 rounded-md items-center justify-center md:p-10">
-            <div class="news-card my-5 py-10 px-8 border border-blue-200">
+        <div class="container grid md:grid-cols-3 gap-4 md:gap-8 rounded-md items-center justify-center md:p-10">
+            <div class="news-card my-5 py-4 md:py-10 px-4 md:px-8 border border-blue-200">
                 <div class="flex">
                     <div class="w-20"><img class="w-20 h-20 rounded-full object-cover" src="src/housekeeper.jpg" alt=""></div>
                     <div class="ml-4 justify-center flex flex-col">
@@ -292,7 +294,7 @@
                     <p class="text-[#57667e]" >Raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to</p>
                 </div>
             </div>
-            <div class="news-card py-10 px-8 border border-blue-200">
+            <div class="news-card py-4 md:py-10 px-4 md:px-8 border border-blue-200">
                 <div class="flex">
                     <div class="w-20"><img class="w-20 h-20 rounded-full object-cover" src="src/housekeeper.jpg" alt=""></div>
                     <div class="ml-4 justify-center flex flex-col">
@@ -305,7 +307,7 @@
                     <p class="text-[#57667e]" >Raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to</p>
                 </div>
             </div>
-            <div class="news-card py-10 px-8 border border-blue-200">
+            <div class="news-card py-4 md:py-10 px-4 md:px-8 border border-blue-200">
                 <div class="flex">
                     <div class="w-20"><img class="w-20 h-20 rounded-full object-cover" src="src/housekeeper.jpg" alt=""></div>
                     <div class="ml-4 justify-center flex flex-col">
